@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+@keyframes gradientText {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animated-gradient-text {
+  background: linear-gradient(90deg, #f0dee9, #7873f5, #f0dee9);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 4s ease infinite;
+}
